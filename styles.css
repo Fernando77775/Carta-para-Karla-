@@ -1,0 +1,66 @@
+/* Establecer el fondo con las rosas rojas */
+body {
+    background-image: url('rosas-rojas.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: Arial, sans-serif;
+    color: white;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Estilos para la carta */
+.carta {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 30px;
+    border-radius: 10px;
+    width: 60%;
+    text-align: center;
+    box-sizing: border-box;
+    color: white;
+}
+
+/* Título con color rosa */
+h1 {
+    color: #ff69b4;
+    margin-bottom: 20px;
+}
+
+/* Estilos del texto de la carta */
+.carta p {
+    font-size: 1.2em;
+    line-height: 1.8em;
+    margin-bottom: 15px;
+}
+
+/* Animación para la imagen del corazón latiendo */
+.corazon-img {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    animation: latir 1s infinite alternate;
+}
+
+/* Animación para el latido del corazón */
+@keyframes latir {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1); /* Aumenta el tamaño */
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Música de fondo (el audio se mantiene en bucle) */
+audio {
+    display: none;
+}
